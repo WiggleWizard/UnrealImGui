@@ -419,6 +419,9 @@ void SImGuiWidget::ReturnFocus()
 		}
 	}
 
+	// reset input state
+	InputHandler.Get()->ResetInput();
+
 	PreviousUserFocusedWidget.Reset();
 }
 
