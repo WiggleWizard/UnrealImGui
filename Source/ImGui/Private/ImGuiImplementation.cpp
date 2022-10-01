@@ -43,6 +43,7 @@ static FImGuiContextHandle ImGuiContextPtrHandle(ImGuiContextPtr);
 #endif // WITH_EDITOR
 
 #include "imgui.cpp"
+#include "imgui_stdlib.cpp"
 #include "imgui_demo.cpp"
 #include "imgui_draw.cpp"
 #include "imgui_widgets.cpp"
