@@ -272,9 +272,8 @@ void FImGuiContextManager::BuildFontAtlas(const TMap<FName, TSharedPtr<ImFontCon
 			// Set font name for debugging
 			if (CustomFontConfig.IsValid())
 			{
-				#ifdef _WIN32
-				strcpy_s(CustomFontConfig->Name, 40, TCHAR_TO_ANSI(*CustomFontName.ToString()));
-				#endif
+				strncpy(CustomFontConfig->Name, TCHAR_TO_ANSI(*CustomFontName.ToString()), 40);
+				CustomFontConfig->Name[39] = NULL;
 			}
 		
 			FontAtlas.AddFont(CustomFontConfig.Get());
