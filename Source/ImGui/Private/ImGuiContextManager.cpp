@@ -273,7 +273,7 @@ void FImGuiContextManager::BuildFontAtlas(const TMap<FName, TSharedPtr<ImFontCon
 			if (CustomFontConfig.IsValid())
 			{
 				strncpy(CustomFontConfig->Name, TCHAR_TO_ANSI(*CustomFontName.ToString()), 40);
-				CustomFontConfig->Name[39] = NULL;
+				CustomFontConfig->Name[39] = '\0';
 			}
 		
 			FontAtlas.AddFont(CustomFontConfig.Get());
