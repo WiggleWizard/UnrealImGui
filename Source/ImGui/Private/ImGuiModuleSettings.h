@@ -78,7 +78,7 @@ struct FImGuiCanvasSizeInfo
 
 	// Select how to specify canvas size.
 	UPROPERTY(EditAnywhere, Category = "Canvas Size")
-	EImGuiCanvasSizeType SizeType = EImGuiCanvasSizeType::Desktop;
+	EImGuiCanvasSizeType SizeType = EImGuiCanvasSizeType::Viewport;
 
 	// Custom canvas width.
 	UPROPERTY(EditAnywhere, Category = "Canvas Size", meta = (ClampMin = 0, UIMin = 0))

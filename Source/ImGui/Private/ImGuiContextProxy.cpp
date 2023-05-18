@@ -219,12 +219,8 @@ void FImGuiContextProxy::BeginFrame(float DeltaTime)
 
 		ImGuiInterops::CopyInput(IO, InputState);
 		InputState.ClearUpdateState();
-
-		if (GEngine && GEngine->GameViewport)
-		{
-			GEngine->GameViewport->GetViewportSize(DisplaySize);
-			IO.DisplaySize = ImVec2(DisplaySize.X, DisplaySize.Y);
-		}
+		
+		IO.DisplaySize = ImVec2(DisplaySize.X, DisplaySize.Y);
 
 		ImGui::NewFrame();
 
