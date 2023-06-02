@@ -238,13 +238,6 @@ void UImGuiInputHandler::OnMouseInputDisabled()
 	}
 }
 
-void UImGuiInputHandler::ResetInput() 
-{
-	InputState->ResetKeyboard();
-	InputState->ResetGamepadNavigation();
-	InputState->ResetMouse();
-}
-
 void UImGuiInputHandler::CopyModifierKeys(const FInputEvent& InputEvent)
 {
 	InputState->SetControlDown(InputEvent.IsControlDown());

@@ -421,7 +421,9 @@ void SImGuiWidget::ReturnFocus()
 	}
 
 	// reset input state
-	InputHandler.Get()->ResetInput();
+	InputHandler->OnKeyboardInputDisabled();
+	InputHandler->OnGamepadInputDisabled();
+	InputHandler->OnMouseInputDisabled();
 
 	PreviousUserFocusedWidget.Reset();
 }

@@ -132,9 +132,6 @@ public:
 	/** Called to handle deactivation of the mouse input. */
 	virtual void OnMouseInputDisabled();
 
-	/** Called when input is released. */
-	virtual void ResetInput();
-
 protected:
 
 	/** Copy state of modifier keys to input state. */

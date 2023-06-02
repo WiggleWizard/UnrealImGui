@@ -272,7 +272,7 @@ void FImGuiContextManager::BuildFontAtlas(const TMap<FName, TSharedPtr<ImFontCon
 			// Set font name for debugging
 			if (CustomFontConfig.IsValid())
 			{
-				strncpy(CustomFontConfig->Name, TCHAR_TO_ANSI(*CustomFontName.ToString()), 40);
+				FCStringAnsi::Strncpy(CustomFontConfig->Name, TCHAR_TO_ANSI(*CustomFontName.ToString()), 40);
 				CustomFontConfig->Name[39] = '\0';
 			}
 		
