@@ -48,7 +48,7 @@ void SImGuiLayout::Construct(const FArguments& InArgs)
 				+ SConstraintCanvas::Slot()
 				.Anchors(FAnchors(0.f, 0.f, 1.f, 1.f))
 				.AutoSize(true)
-				.Offset(FMargin(1.f, 1.f, 0.f, 1.f))
+				.Offset(FMargin(0.f, 0.f, 0.f, 0.f))
 				.Alignment(FVector2D::ZeroVector)
 				[
 					SNew(SImGuiWidget)

@@ -201,8 +201,8 @@ void UImGuiInputHandler::OnKeyboardInputDisabled()
 	if (bKeyboardInputEnabled)
 	{
 		bKeyboardInputEnabled = false;
-		InputState->ResetKeyboard();
 	}
+	InputState->ResetKeyboard();
 }
 
 void UImGuiInputHandler::OnGamepadInputEnabled()
@@ -215,8 +215,8 @@ void UImGuiInputHandler::OnGamepadInputDisabled()
 	if (bGamepadInputEnabled)
 	{
 		bGamepadInputEnabled = false;
-		InputState->ResetGamepadNavigation();
 	}
+	InputState->ResetGamepadNavigation();
 }
 
 void UImGuiInputHandler::OnMouseInputEnabled()
@@ -233,9 +233,9 @@ void UImGuiInputHandler::OnMouseInputDisabled()
 	if (bMouseInputEnabled)
 	{
 		bMouseInputEnabled = false;
-		InputState->ResetMouse();
 		UpdateInputStatePointer();
 	}
+	InputState->ResetMouse();
 }
 
 void UImGuiInputHandler::CopyModifierKeys(const FInputEvent& InputEvent)

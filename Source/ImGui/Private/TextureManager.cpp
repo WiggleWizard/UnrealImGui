@@ -4,6 +4,8 @@
 
 #include <Engine/Texture2D.h>
 #include <Framework/Application/SlateApplication.h>
+#include <RHI.h>
+#include <RHITypes.h>
 
 #include <algorithm>
 
